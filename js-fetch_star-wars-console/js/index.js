@@ -6,7 +6,7 @@ async function fetchData() {
   const response = await fetch(url);
   const data = await response.json();
   console.log(response);
-  console.log(data);
+  console.log("data: ", data);
   console.log(data.count);
   for (const result of data.results) {
     console.log(result.height);
